@@ -1,0 +1,167 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* setion index  */
+.half-screen{
+    height: 70vh;
+   
+}
+
+.image-container{
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.inline-unstyling {
+    list-style: none;
+    
+}
+
+
+/*
+.custom-navbar{
+    background-color: #D6A2E8;
+}
+
+.custom-link {
+    color: #6a0dad; 
+}
+.custom-link:hover {
+    color: #4b0082;  لون مميز عند التمرير 
+}
+/*
+svg{
+    position: absolute;
+    bottom: 80px;
+}
+
+svg path {
+    fill: white;  /* تغيير اللون إلى لون مخصص 
+  }*/
+.custom-margin-top
+{
+    margin-top: 70px; /* إزاحة مخصصة */
+}
+.custom-col{
+
+    position: relative;
+    top: -90px; /* يرفع الكارت إلى الأعلى */
+
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* حركات الظل والتحويل */
+    box-shadow: 0 4px 8px rgba(149, 118, 184, 0.1);  /* الظل الافتراضي */
+    border-radius: 10px; /* حواف مستديرة */
+   
+}
+
+.card:hover {
+    transform: translateY(-10px); /* رفع الكارت عند التمرير */
+    box-shadow: 10px 20px 40px 10px rgba(201, 122, 224, 0.2);
+}
+    
+.section {
+    margin-top: 200px; /* يمكن تعديل القيمة حسب ارتفاع النافبار */
+}
+    
+.image-container {
+    display: flex;
+    justify-content: center; /* توسيط الصورة أفقياً */
+    align-items: center; /* توسيط الصورة عمودياً */
+    margin-bottom: -70px; /* إضافة مسافة أسفل الصورة */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card img {
+    width: 100%; /* يجعل الصورة تملأ عرض الكرت */
+    height: 200px; /* تحديد ارتفاع موحد للصورة */
+    object-fit: cover; /* لضبط الصورة داخل المساحة المحددة بدون تشوه */
+    border-radius: 5px; /* تحسين المظهر بإضافة انحناء خفيف */
+}
+
+
+
+
+/* section hotels */
+.background-image {
+    position: relative;
+    height: 60vh; /* تأكد أن العنصر يغطي كامل الشاشة */
+    background-image: url('images/welcome.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* تكرار الصورة لتغطي العنصر */
+    background-color: rgba(255, 255, 255, 0.5); /* طبقة لون شفافة */
+    background-blend-mode: lighten; /* مزج الخلفية مع اللون */
+}
+
+.hotels-section {
+    margin-top: 300px; /* مثال على المسافة العلوية */
+    padding-top: 100px;
+}
+
+.hotel-listing {
+    margin-top: 50px; /* تباعد إضافي للصفوف */
+}
+
+/* section staduim */
+
+
+.stadium-container {
+  /*  background-image: url('images/stadium-bg.jpg');  /* خلفية ملعب مميزة */
+    background-size: cover; 
+    background-position: center; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    color: white; /*نص أبيض ليتناسب مع الخلفية */
+}
+
+.stadium-container h3 {
+    color: #24231e; 
+    font-size: small;
+    
+}
+
+.event-item {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة بيضاء لتمييز النص */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.event-item:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* تغيير الخلفية عند التمرير */
+}
+
+
+/* section match schuled */
+
+
+
+/* section footer */
+
+.simple-footer {
+    background-color: #D6A2E8;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.simple-footer p {
+    margin: 0;
+}

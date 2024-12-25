@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- الشعار (Logo) -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="rounded img-small" style="width: 30px; height: 30px; margin-right: 10px;">
+               <!-- <span>World Cup</span>-->
+            </a>
+
+            <!-- زر التبديل (Toggle Button) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- القائمة القابلة للطي (Collapsible Menu) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stadiums.html">Stadiums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Match.html">Match Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-ticket"></i> PAY TICKET
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">PAY TICKET</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Form for selecting ticket type -->
+              <form action="#" method="POST">
+                  <div class="mb-3">
+                      <label for="ticketType" class="form-label">Ticket Type:</label>
+                      <select class="form-select" id="ticketType" name="ticketType" required>
+                          <option value="" disabled selected>Select Ticket Type</option>
+                          <option value="vip">VIP - 200 SAR</option>
+                          <option value="gold">Gold - 100 SAR</option>
+                          <option value="silver">Silver - 50 SAR</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="ticketQuantity" class="form-label">Quantity:</label>
+                      <input type="number" class="form-control" id="ticketQuantity" name="ticketQuantity" min="1" value="1" required>
+                  </div>
+                  <p class="text-muted">The total will be calculated upon submitting the request.</p>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"> Confirm Order</button>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Background Header -->
+<section>
+<div class="container-fluid p-0">
+<div class="row m-0">
+    <div class="col half-screen p-0">
+    <div class="image-container" style="background-image: url('images/welcome.png');">
+    <!--  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L30,112C60,96,120,64,180,64C240,64,300,96,360,96C420,96,480,64,540,42.7C600,21,660,11,720,16C780,21,840,43,900,48C960,53,1020,43,1080,42.7C1140,43,1200,53,1260,64C1320,75,1380,85,1410,90.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>-->
+      </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Card -->
+<section>
+<div class="container-fluid text-center">
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="col-sm-2 custom-col">
+         <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                    <div class="card-body">
+                        <img src="images\aramco.jpg" class="card-img-top img-fluid" alt="">
+                      <h5 class="card-title">Stadiums</h5>
+                      <a href="stadiums.html" class="btn btn-primary">Go</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-2 custom-col">
+            <div class="card">
+               <div class="card-body">
+                 <div class="row">
+                   <div class="col">
+                       <div class="card-body">
+                           <img src="images\stadiumsfront.jpg" class="card-img-top img-fluid" alt="">
+                         <h5 class="card-title">Match Schedule</h5>
+                         <a href="Match.html" class="btn btn-primary">Go</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           </div>
+           <div class="col-sm-2 custom-col">
+            <div class="card">
+               <div class="card-body">
+                 <div class="row">
+                   <div class="col">
+                       <div class="card-body">
+                           <img src="images\metro.jpg" class="card-img-top img-fluid" alt="">
+                         <h5 class="card-title">Transport</h5>
+                         <a href="transport.html" class="btn btn-primary">Go</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           </div>
+           <div class="col-sm-2 custom-col">
+            <div class="card">
+               <div class="card-body">
+                 <div class="row">
+                   <div class="col">
+                       <div class="card-body">
+                           <img src="images\hotel.jpg" class="card-img-top img-fluid" alt="" >
+                         <h5 class="card-title">Hotels</h5>
+                         <a href="hotels.html" class="btn btn-primary">Go</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Carousel -->
+<div class="container-fluid d-flex justify-content-center ">
+<div class="row mt-5 mb-5">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images\kingsalman.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images\aramco.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+
+
+<!-- Foteer -->
+<footer class="simple-footer">
+  <div class="container text-center">
+      <p>&copy; 2024 جميع الحقوق محفوظة.اكاديمية طويق</p>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
